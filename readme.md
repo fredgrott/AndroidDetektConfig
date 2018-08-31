@@ -29,5 +29,26 @@ Rest of my Android stuff is on this page along with my contact info
 
 https://github.com/shareme/MyAndroidStuff
 
+# Resources
+
+Google's Kotlin style Guide for the Android Platform. Note, IntelliJ and Android Studio already have this 
+set by default. Thus in the Spotless plugin we only set to format md files, sourcee license headrs, etc.
+
+https://android.github.io/kotlin-guides/style.html
+
+Config directions for the Spotless-KLint plugin
+
+https://github.com/diffplug/spotless/tree/master/plugin-gradle#applying-ktlint-to-kotlin-files
+
+## Detekt
+
+Config file guide
+
+https://arturbosch.github.io/detekt/configurations.html
+
+Suppress issues via code directions
+
+https://arturbosch.github.io/detekt/suppressing-rules.html
+
 
 
