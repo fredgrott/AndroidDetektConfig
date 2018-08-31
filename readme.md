@@ -1,7 +1,9 @@
+![codeqa icon](code-optimization-interface-circular-symbol_318-49738.jpg)
+
 # Intro
 
 Kotlin CodeQA support is not default confgiured in Android Studio or Gradle just yet as of fall 2018. This is a simple app project to 
-show how to confgiure the static analysis tool detekt and the spotless lin formatting checker.
+show how to confgiure the static analysis tool detekt and the spotless lint formatting checker.
 
 In short words FindBugs, Checkstyle, PMD, Classcycle, etc is replace by just using two tools.
 
@@ -19,5 +21,13 @@ The Medium article is currently in process and will be published soon.
 # license
 
 Apache 2.0 License 2018 Fred Grott
+
+# Dev Queries
+
+Rest of my Android stuff is on this page along with my contact info
+
+
+https://github.com/shareme/MyAndroidStuff
+
 
 
