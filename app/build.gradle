@@ -4,6 +4,10 @@ apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
 
+apply plugin: "io.gitlab.arturbosch.detekt"
+
+apply plugin: "com.diffplug.gradle.spotless"
+
 android {
     compileSdkVersion 28
     buildToolsVersion "28.0.2"
@@ -22,11 +26,27 @@ android {
         }
     }
 }
+detekt {
+    version = "1.0.0.RC8"
+    defaultProfile {
+        input = "$projectDir/src/main/java"
+        config = "$projectDir/default-detekt-config.yml"
+        filters = ".*/resources/.*,.*/tmp/.*"
+        output = "$projectDir/build/reports/detekt"
+        baseline = file("$projectDir/build/reports/baseline.xml")
+    }
+}
+spotless {
+    kotlin {
+        target '**/*.kt'
+        licenseHeaderFile "$rootDir/license.kt.txt"
+    }
+}
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    implementation 'androidx.appcompat:appcompat:1.0.0-beta01'
+    implementation 'androidx.appcompat:appcompat:1.0.0-rc02'
     implementation 'android.arch.navigation:navigation-fragment-ktx:1.0.0-alpha05'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.1.0-alpha4'
