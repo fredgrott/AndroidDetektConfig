@@ -24,7 +24,7 @@ Apache 2.0 License 2018 Fred Grott
 
 # Dev Queries
 
-Rest of my Android stuff is on this page along with my contact info
+I dev apps and look for startup paid opportunities, view my full android samples here
 
 
 https://github.com/shareme/MyAndroidStuff
